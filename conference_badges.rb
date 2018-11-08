@@ -19,12 +19,10 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
+  assign_rooms(attendees).each do |badge|
+    puts badge
+  end
   batch_badge_creator(attendees).each do |badge|
     puts badge
-    binding.pry
   end
 end
-
-# so, it's expecting you to loop through them. I think you can do that with the batch_badge_creator method.
-# Call that method since it returns an array, you can call each on the batch_badge_creator method
-# and print out each of the values it returns
