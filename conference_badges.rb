@@ -13,10 +13,9 @@ end
 
 def assign_rooms(speakers_array)
   assignments = []
-  speakers_array.each_with_index do |speaker, i|
-    assignments << "Hello, #{speaker}! You'll be assigned to room #{i + 1}!"
+  speakers_array.collect.with_index do |speaker, i|
+    "Hello, #{speaker}! You'll be assigned to room #{i + 1}!"
   end
-  assignments
 end
 
 def printer(array)
