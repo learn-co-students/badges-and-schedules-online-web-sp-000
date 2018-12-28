@@ -17,8 +17,9 @@ end
   
 def assign_rooms (speakers)
   rooms_array = []
+  rooms = speakers.length
   room = 1
-  while room < 7
+  while room <= rooms
     speakers.each do |speaker|
       rooms_array.push("Hello, #{speaker}! You'll be assigned to room #{room}!")
       room += 1
@@ -26,3 +27,17 @@ def assign_rooms (speakers)
   end
   return rooms_array
 end
+
+def printer (attendees)
+  new_badge_array = batch_badge_creator (attendees)
+  new_rooms_array = assign_rooms (attendees)
+  
+  new_badge_array.each do |line|
+    puts line
+  end
+  
+  new_rooms_array.each do |lineb|
+    puts lineb
+  end
+end
+  
