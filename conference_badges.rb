@@ -21,3 +21,4 @@ def assign_rooms(attendees)
   end
   return assigned_room
 end
+
