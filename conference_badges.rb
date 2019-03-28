@@ -4,7 +4,7 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(array)
-  array.collect! {|x| badge_maker(x)}
+  array.collect {|x| badge_maker(x)}
 end
 
 def assign_rooms(array)
@@ -14,8 +14,8 @@ def assign_rooms(array)
 end
 
 def printer(array)
-  copy = Array.new
-  array.each {|x| copy<<x}
-  batch_badge_creator(copy).each {|x| puts x}
+  # copy = Array.new
+  # array.each {|x| copy<<x}
+  batch_badge_creator(array).each {|x| puts x}
   assign_rooms(array).each {|x| puts x}
 end
