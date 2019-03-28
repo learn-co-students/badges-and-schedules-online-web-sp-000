@@ -14,8 +14,6 @@ def assign_rooms(array)
 end
 
 def printer(array)
-  # copy = Array.new
-  # array.each {|x| copy<<x}
   batch_badge_creator(array).each {|x| puts x}
   assign_rooms(array).each {|x| puts x}
 end
