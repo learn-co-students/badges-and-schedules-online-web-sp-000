@@ -16,8 +16,16 @@ def assign_rooms(speakers)
 end
 
 def printer(names)
-  names.collect do |name|
-    batch_badge_creator(names)
-    assign_rooms(names)
+  index = 0
+  names.each do |name|
+    badge_array = batch_badge_creator(names)
+    puts badge_array[index]
+    index += 1
+  end
+  index = 0
+  names.each do |name|
+    room_array = assign_rooms(names)
+    puts room_array[index]
+    index += 1
   end
 end
