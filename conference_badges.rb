@@ -27,7 +27,10 @@ end
 
 # printer method
 def printer(attendees)
+# iterates over #batch_badge_creator and prints one each
 batch_badge_creator(attendees).each { |badges| puts "#{badges}"}
+
+# iterates over #assign_rooms and prints one each
 assign_rooms(attendees).each { |rooms| puts "#{rooms}"}
 
 end
