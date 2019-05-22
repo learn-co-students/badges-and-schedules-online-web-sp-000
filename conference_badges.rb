@@ -1,6 +1,6 @@
 # Write your code here.
 def badge_maker(name)
-  puts "Hello, my name is #{name}"
+  return "Hello, my name is #{name}."
 end
 
 names = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
@@ -15,9 +15,20 @@ badge_messages = []
 end
 
 def assign_rooms(names)
-room_number = 7
+  room_number = 1
+  room_list = []
   names.each do |name|
-    puts "Hello, #{name}! You'll be assigned to room #{room_number}"
-    room_number = room_number - 1
+    room_list.push("Hello, #{name}! You'll be assigned to room #{room_number}!")
+    room_number = room_number + 1
+  end
+  return room_list
+end
+
+def printer(names)
+  batch_badge_creator(names).each do|result|
+  puts result
+  end
+  assign_rooms(names).each do |assignment|
+    puts assignment
   end
 end
