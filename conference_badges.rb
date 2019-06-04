@@ -24,6 +24,6 @@ def printer(attendees)
   end
 
   assign_rooms(attendees).each do |assignment|              #then assign_rooms call
-    puts assignment
+    puts assignment                                     #iterate over your array of room assignments in order to puts out each individual assignment.
   end
 end
