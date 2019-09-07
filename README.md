@@ -1,4 +1,4 @@
-# Badges and Schedules
+rint# Badges and Schedules
 
 ## Objectives
 

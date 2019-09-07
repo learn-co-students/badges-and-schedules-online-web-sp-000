@@ -3,10 +3,10 @@ def badge_maker(name)
 end  
 
 
-def batch_badge_creator(name)
+def batch_badge_creator(attendees)
   new_array = []
-  name.each do |badge|
-  new_array << "Hello, my name is #{badge}."
+  attendees.each do |name|
+  new_array << "Hello, my name is #{name}."
   end
   new_array
 end  
@@ -20,12 +20,13 @@ new_array
 end 
 
 def printer(attendees)
-  batch_badge_creator(name)
-  assign_rooms(speakers)
-
-printer(attendees)
+  batch_badge_creator(attendees).each do |badges|
+    puts badges
+  end
+  assign_rooms(attendees).each do |assignment|
+    puts assignment
+end
 end
 
-#The method `printer` should output first the results of the batch_badge_creator method and then of the assign_rooms method to the screen - this way you can output
-    # the badges and room assignments one at a time.
+#The method `printer` should output first the results of the batch_badge_creator method and then of the assign_rooms method to the screen - this way you can output the badges and room assignments one at a time.
     # To make this test pass, make sure you are iterating through your badges and room assignments lists.
