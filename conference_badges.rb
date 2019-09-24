@@ -3,8 +3,8 @@ require'pry'
 
 the_people = [Edsger, Ada, Charles, Alan, Grace, Linus, Matz]
 
-def badge_maker(the_people)
-  "Hello, my name is #{the_people}."
+def badge_maker(NameError)
+  "Hello, my name is #{name}."
 end
 
 
