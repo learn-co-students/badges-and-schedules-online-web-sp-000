@@ -4,7 +4,7 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(speakers)
-speakers.map! {|speaker| "Hello, my name is #{speaker}."}
+speakers.map {|speaker| "Hello, my name is #{speaker}."}
 end
 
 def assign_rooms(speakers)
@@ -14,8 +14,8 @@ def assign_rooms(speakers)
     end
     speaker_room_assignment
   end
-  def printer(attendees)
 
+  def printer(attendees)
    batch_badge_creator(attendees).each do
      |badge|
    puts "#{badge}"
