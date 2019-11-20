@@ -12,7 +12,6 @@ end
 
 # takes list of speakers and assigns each speaker a room
 # return a list of room assignments with a string
-# speakers are: Edsger, Ada, Charles, Alan, Grace, Linus, and Matz
 def assign_rooms(attendees)
   var1 = []
   attendees.each_with_index do |speaker, index|
@@ -21,9 +20,13 @@ def assign_rooms(attendees)
   var1
 end
 
-# iterating through your badges and room assignments lists
-def printer(attendees)
-  assign_rooms.each do |line|
-    puts var1
+# iterate over your array of room assignments
+# puts out each individual assignment
+def printer(array)
+  batch_badge_creator(array).each do |line|
+    puts line
+  end
+  assign_rooms(attendees).each do |room|
+    puts room
   end
 end
