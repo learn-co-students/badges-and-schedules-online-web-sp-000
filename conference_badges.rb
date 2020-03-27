@@ -1,1 +1,3 @@
-# Write your code here.
+def assign_rooms(speakers, rooms)
+
+end
