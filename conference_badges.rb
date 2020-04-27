@@ -63,12 +63,12 @@ def printer(name)
 
 
 i = batch_badge_creator(name)
-i.each do |prints|
+batch_badge_creator(name).each do |prints|
   puts prints
 end
       # binding.pry
 x =  assign_rooms(name)
-x.each do |crinks|
+assign_rooms(name).each do |crinks|
   puts crinks
 end
 
