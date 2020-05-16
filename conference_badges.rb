@@ -20,9 +20,10 @@ def assign_rooms(array)
 end
 
 def printer(array)
-  array.each do |name|
-    puts "Hello, my name is #{name}."
-    puts "Hello, #{name}! You'll be assigned to room #{array.index(name)+1}!"
+  batch_badge_creator(array).zip(assign_rooms(array)).each do |x,y|
+    puts x
+    puts y
   end
+
 
 end
