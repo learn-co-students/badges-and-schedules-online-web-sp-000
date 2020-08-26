@@ -1,0 +1,7 @@
+def batch_badge_creator(attendee)
+  new_attendee = []
+  attendee.each do |name| 
+    new_attendee.push(puts "Hello, my name is #{name}.")
+  new_attendee
+  end
+end
