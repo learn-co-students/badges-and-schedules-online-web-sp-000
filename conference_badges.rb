@@ -10,10 +10,20 @@ end
 badges
 end 
 
-def printer(attendees)
-  badges_and_room_assignments.each_line do |line|
-    puts line.chomp
-      end
-      printer(attendees) 
-    end  
+def assign_rooms(attendees)
+  rooms = []
+attendees.each_with_index do |attendee, index|
+  rooms << "Hello, #{attendee}! You'll be assigned to room #{index+1}!"
+end 
+rooms 
+end 
+  
+  
+  
+# def printer(attendees) 
+#   badges_and_room_assignments.each_line do |line|
+#     puts line.chomp
+#       end
+#       printer(attendees)  
+#     end  
     
