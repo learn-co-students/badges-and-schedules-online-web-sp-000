@@ -3,17 +3,17 @@ def badge_maker(name)
 end 
 
 def batch_badge_creator(attendees)  
-badges = " "
+badges = []
 attendees.each do |attendee|
-badges >> "Hello, my name is #{attendee}"
+badges << "Hello, my name is #{attendee}."
 end 
 badges
 end 
 
-def printer
+def printer(attendees)
   badges_and_room_assignments.each_line do |line|
     puts line.chomp
       end
-      printer(attendees)
+      printer(attendees) 
     end  
     
