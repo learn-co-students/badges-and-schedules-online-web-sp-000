@@ -29,3 +29,5 @@ end
     puts assigned
   end
 end
+
+printer(array)
