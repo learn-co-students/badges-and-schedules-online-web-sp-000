@@ -30,4 +30,3 @@ end
   end
 end
 
-printer(array)
