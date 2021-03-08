@@ -2,15 +2,9 @@ def badge_maker(name)
 return "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(speakers)
-  badge_messages= []
-  speakers.each do |speaker|
-    message = badge_maker(speaker)
-    badge_messages << message
+def batch_badge_creator(names)
+ names.map{ |name| badge_maker(name) }
 end
-badge_messages
-end
-
 
 def assign_rooms(speakers)
   room_number = 1
