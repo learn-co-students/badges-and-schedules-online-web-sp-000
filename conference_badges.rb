@@ -1,13 +1,10 @@
 # Write your code here.
 def badge_maker(name)
-    puts "Hello, my name is #{name}."
+    return "Hello, my name is #{name}."
 end
 
-#def assign_rooms(names)
-    #array.each do |name|
-    #"Hello, #{names}! You'll be assigned to room  !"
-##end
-
-#def printer
-
-#end
+def batch_badge_creator(namesArray)
+    namesArray.each do |name|
+    return "Hello, my name is #{name}."
+    end
+end
